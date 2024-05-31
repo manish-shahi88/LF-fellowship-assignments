@@ -1,7 +1,7 @@
 *{
     box-sizing: border-box;
 }
-hr{border-top: 1px solid rgb(224, 224, 224);}
+hr{border-top: 1px solid #e0e0e0;}
 p{
     font-size: 12px;
     font-weight: 400;
@@ -285,6 +285,21 @@ body{
 }
 .tools-up .container p,.tools-down .container p{
     font-size: 10px;
+}
+.parent-skill{
+    position: relative;
+}
+.skill-p::before{
+    content: "";
+    width: 1px;
+    height: 100px;
+    background-color: #e0e0e0;
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 100px;
+
+
 }
 @media screen and (max-width: 576px){
     body{
