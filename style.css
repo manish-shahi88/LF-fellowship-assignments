@@ -1,0 +1,430 @@
+*{
+    box-sizing: border-box;
+}
+hr{border-top: 1px solid rgb(224, 224, 224);}
+p{
+    font-size: 12px;
+    font-weight: 400;
+    color: #79819A; 
+    margin: 0;
+}
+h6{
+    font-family: "DM Sans", sans-serif;
+    font-style: normal;
+    margin: 0;
+
+}
+body{
+    width: 100%;
+    font-family: "Outfit", sans-serif;
+    font-style: normal;
+}
+#main{
+    margin-left: 80px;
+    display: flex;
+}
+.aside{
+    width: 355px;
+    background-color:#F7F9FC;
+    
+}
+.main-body{
+    width: 845px;
+    background-color: white;
+}
+
+.aside-content{
+    width: 100%;
+    margin-top: 32px;
+    padding: 0 48px;
+}
+.aside-content .title{
+    height: 82px;
+    margin-bottom: 32px;
+}
+.aside-content .title h1{
+    font-size: 32px;
+    font-weight: 500;
+}
+.aside-content .title h4{
+    font-size: 24px;
+    font-weight: 500;
+    margin-top: 8px;
+}
+.aside-content .quote{
+    height: 70px;
+    margin-bottom: 32px;
+}
+.quote h4,.quote p{
+    margin-left: 20px;
+    position: relative;
+}
+.quote h4::before{
+    content: url(./assets/double-quote-opening.png);
+    position: absolute;
+    width: 20px;
+    display: block;
+    top: -4px;
+    left: -20px;
+    
+}
+.quote h4::after{
+    content: url(./assets/double-quote-closing.png);
+    position: absolute;
+    width: 20px;
+    display: block;
+    right: 20px;
+    bottom: 0;
+    
+}
+.aside-content .quote h4{
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 4px;
+}
+.aside-content .details{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin: 32px 0;
+}
+.email,.website,.phone,.address{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    
+}
+
+.aside-content .socials{
+    margin: 32px 0;  
+    display: flex;  
+    gap: 24px;
+    flex-direction: column;
+    
+}
+.aside-content .socials .social{
+    margin: 32px 0;  
+    display: flex;  
+    gap: 24px;
+    flex-direction: column;
+    
+}
+
+.instagram,.dribble,.twitter,.linkedin{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+.aside-content .language-section{
+    margin: 32px 0;  
+    display: flex;  
+    gap: 24px;
+    flex-direction: column;
+}
+.aside-content .language-section .languages{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.italian,.greek,.english,.spanish{
+    display: flex;
+    align-items: center;
+    gap: 26px;
+}
+.email-text,.website-text,.phone-text,.address-text,.instagram-detail,.dribble-detail,.twitter-detail,.linkedin-detail,.language-detail{
+    display: flex;
+    flex-direction: column;
+    gap:8px
+}
+
+
+
+/* body-section */
+
+.timeline-bar{
+    margin-top: 64px;
+    margin-left: 32px;
+    width: 855px;
+    border-left: 1px solid #ccc;
+}
+.latest-projects,.education,.skills,.tools{
+    position: relative;
+    margin-left: 32px;
+    margin-bottom: 48px;
+    width: 700px;
+}
+
+.latest-project{
+    display: flex;
+    /* justify-content: space-between; */
+    gap: 10px;
+    
+}
+.latest-projects h1,.experience h1,.education h1,.skills h1,.tools h1{
+    font-size: 24px;
+    font-weight: 400;
+}
+.latest-projects::before,.experience::before,.education::before,.skills::before,.tools::before{
+    content: "";
+    width: 10px;
+    height: 10px;
+    display: block;
+    border-radius: 50% ;
+    background-color: rgb(41, 41, 102);
+    border:15px solid rgb(243, 243, 243);
+    position: absolute;
+    left: -52px;
+    top: 0;
+}
+
+.powerful-design{
+    padding: 24px;
+    background-color: #F7F9FC;
+}
+.powerful-upper,.powerful-lower{
+    display: flex;
+    gap: 16px;
+}
+.powerful-upper{
+    margin-bottom: 16px;
+}
+
+/* Experience */
+.experience{
+    position: relative;
+    margin-left: 32px;
+    margin-bottom: 48px;
+    width: 700px;
+}
+.experience-contents{
+    margin: 32px 0;
+}
+.experience-content{
+    display: flex;
+    margin-bottom: 10px;  
+    
+}
+.apple-details{
+    width: 400px;
+}
+.experience-content img{
+    margin-right: 20px;
+}
+.apple-logo{
+    display: flex;  
+}
+.apple-description{
+    margin-left: 20px;
+}
+
+
+/* .education */
+.education .container{
+    margin: 32px 0;   
+    display: flex;   
+    gap: 5px;
+}
+.education-detail{
+    width: 228px;
+    padding: 16px 24px;
+    border-radius: 5px;
+    background-color: #F7F9FC;
+}
+.edu-img{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+/*---- skills ------*/
+.skill-detail{
+    margin-top: 32px;
+    margin-bottom: 16px;
+}
+.design{
+    text-align: center;
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+.design div{
+    width: 114px;
+    padding: 20px 0;
+    background-color: #F7F9FC;
+}
+.design .no-bg{
+    background-color: white;
+    padding: 20px 0;
+}
+.tools-up,.tools-down{
+    margin-top: 32px;
+    display: flex;
+    gap: 10px;
+}
+.tools-up .container{
+    width: 168px;
+    padding: 16px;
+    background-color: #F7F9FC;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: -20px;
+    
+}
+.tools-down .container{
+    width: 133px;
+    padding: 16px;
+    background-color: #F7F9FC;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.tools-up .container p,.tools-down .container p{
+    font-size: 10px;
+}
+@media screen and (max-width: 576px){
+    body{
+        overflow-x: hidden;
+    }
+    #main{
+        margin: 0 auto;
+        flex-direction: column;
+    }
+
+    /* -------Refactor-------------- */
+    .main-body{
+        max-width: 576px;
+    }
+    .timeline-bar{
+        width: 500px;
+    }
+    h1{
+        width: 300px;
+    }
+    .latest-projects{
+        width: 300px;
+    }
+    .experience{
+        width: 300px;
+    }
+    .apple-logo{
+        width: 300px;
+    }
+    
+    .education,.education .container{
+        width: 300px;
+    }
+    .skills{
+        width: 300px;
+    }
+    /* .design{
+        width: 300px;
+        margin-top: 100px;
+    }
+    
+    .skill-detail{
+        width: 300px;
+        
+
+    } */
+
+/* -------Refactor-------------- */
+
+
+    .aside-content{
+        padding: 0 10px;
+    }
+    .aside-content .title h1,.aside-content .title h4,.aside-content .quote{
+        text-align: center;
+    }
+    .aside-content .title h4{
+        font-size: 24px;
+    }
+    .aside-content .details{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .aside-content .details .email,.aside-content .details .website,.aside-content .details .phone,.aside-content .details .address{
+        width: 150px;
+        gap: 1px;
+    }
+    /* .email-text p, .email-text h6,.website-text p,.website h6,.phone-text p,.phone-text h6,.address-text p,.address-text h6{
+        font-size: 8px;
+    } */
+    .aside-content .socials .social{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .aside-content .language-section .languages{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .italian,.greek,.english,.spanish{
+        width: 150px;
+    }
+
+    /* body-part */
+    .latest-project{
+        flex-direction: column;
+        /* justify-content: space-between; */
+        gap: 10px;
+        
+    }
+    .powerful-design{
+        width: 290px;
+    }
+    .experience-content{
+        flex-direction: column;
+        gap: 10px;
+    }
+    .apple-description{
+        width: 290px;
+    }
+    .education .container{
+        flex-direction: column;
+    }
+    .education .container .education-detail{
+        width: 290px;
+    }
+
+    /* tools */
+    
+    .tools-up .container,.tools-down .container{
+        width: 120px;
+        padding: 16px;
+        background-color: #F7F9FC;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;  
+        margin-bottom: 10px;  
+    }
+    .tools-up,.tools-down{
+        width: 250px;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .design{
+        margin-top: 50px;
+        flex-direction: column;
+        gap: 10px;
+        position: relative;
+    }
+    .skills .skill-details .design .no-bg{
+        position: absolute;
+        display: block;
+        left: 50;
+        top: 100;
+    }
+    .design div{
+        width: 200px;
+    }
+    
+    
+    
+   
+}
