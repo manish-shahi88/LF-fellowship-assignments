@@ -324,7 +324,9 @@ body{
         font-size: 24px;
     }
     .aside-content .details{
+        padding-left: 15px;
         flex-direction: row;
+        
         flex-wrap: wrap;
     }
     .aside-content .details .email,.aside-content .details .website,.aside-content .details .phone,.aside-content .details .address{
@@ -333,10 +335,12 @@ body{
     }
   
     .aside-content .socials .social{
+        padding-left: 15px;
         flex-direction: row;
         flex-wrap: wrap;
     }
     .aside-content .language-section .languages{
+        padding-left: 15px;
         flex-direction: row;
         flex-wrap: wrap;
     }
@@ -399,4 +403,8 @@ body{
     .design div{
         width: 200px;
     }
+    
+    
+    
+
 }
