@@ -20,16 +20,19 @@ body{
     font-style: normal;
 }
 #main{
-    margin-left: 80px;
+    width: 100%;
     display: flex;
+    justify-content: center;
 }
 .aside{
-    width: 355px;
-    background-color:#F7F9FC;
-    
+    min-width: 30%;
+    background-color:#F7F9FC;   
+}
+.aside img{
+    width: 100%;
 }
 .main-body{
-    width: 845px;
+    width: 70%;
     background-color: white;
 }
 
@@ -144,19 +147,18 @@ body{
 .timeline-bar{
     margin-top: 64px;
     margin-left: 32px;
-    width: 855px;
+    max-width: 855px;
     border-left: 1px solid #ccc;
 }
 .latest-projects,.education,.skills,.tools{
     position: relative;
     margin-left: 32px;
     margin-bottom: 48px;
-    width: 700px;
+    max-width: 700px;
 }
 
 .latest-project{
     display: flex;
-    /* justify-content: space-between; */
     gap: 10px;
     
 }
@@ -194,7 +196,7 @@ body{
     position: relative;
     margin-left: 32px;
     margin-bottom: 48px;
-    width: 700px;
+    max-width: 700px;
 }
 .experience-contents{
     margin: 32px 0;
@@ -205,7 +207,7 @@ body{
     
 }
 .apple-details{
-    width: 400px;
+    max-width: 400px;
 }
 .experience-content img{
     margin-right: 20px;
@@ -225,7 +227,7 @@ body{
     gap: 5px;
 }
 .education-detail{
-    width: 228px;
+    max-width: 228px;
     padding: 16px 24px;
     border-radius: 5px;
     background-color: #F7F9FC;
@@ -263,7 +265,7 @@ body{
     gap: 10px;
 }
 .tools-up .container{
-    width: 168px;
+    max-width: 168px;
     padding: 16px;
     background-color: #F7F9FC;
     border-radius: 5px;
@@ -274,7 +276,7 @@ body{
     
 }
 .tools-down .container{
-    width: 133px;
+    max-width: 133px;
     padding: 16px;
     background-color: #F7F9FC;
     border-radius: 5px;
@@ -306,49 +308,11 @@ body{
         overflow-x: hidden;
     }
     #main{
-        margin: 0 auto;
         flex-direction: column;
     }
-
-    /* -------Refactor-------------- */
     .main-body{
-        max-width: 576px;
+        width: 100%;
     }
-    .timeline-bar{
-        width: 500px;
-    }
-    h1{
-        width: 300px;
-    }
-    .latest-projects{
-        width: 300px;
-    }
-    .experience{
-        width: 300px;
-    }
-    .apple-logo{
-        width: 300px;
-    }
-    
-    .education,.education .container{
-        width: 300px;
-    }
-    .skills{
-        width: 300px;
-    }
-    /* .design{
-        width: 300px;
-        margin-top: 100px;
-    }
-    
-    .skill-detail{
-        width: 300px;
-        
-
-    } */
-
-/* -------Refactor-------------- */
-
 
     .aside-content{
         padding: 0 10px;
@@ -367,9 +331,7 @@ body{
         width: 150px;
         gap: 1px;
     }
-    /* .email-text p, .email-text h6,.website-text p,.website h6,.phone-text p,.phone-text h6,.address-text p,.address-text h6{
-        font-size: 8px;
-    } */
+  
     .aside-content .socials .social{
         flex-direction: row;
         flex-wrap: wrap;
@@ -385,7 +347,6 @@ body{
     /* body-part */
     .latest-project{
         flex-direction: column;
-        /* justify-content: space-between; */
         gap: 10px;
         
     }
@@ -438,8 +399,4 @@ body{
     .design div{
         width: 200px;
     }
-    
-    
-    
-   
 }
